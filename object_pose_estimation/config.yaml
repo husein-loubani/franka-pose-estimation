@@ -1,0 +1,5 @@
+physicsClientType: gui # direct or gui
+digitsVisualizeGui: True # True or False
+device: "cpu" # "gpu" or "cpu"
+save_each: 1
+num_frames: 2000
