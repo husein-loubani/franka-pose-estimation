@@ -147,6 +147,7 @@ class Log:
         objPose,
         endEffectorPose,
         gripperPose,
+        
     ):
         data = {
             "tactileColorL": tactileColorL,
@@ -232,7 +233,7 @@ class Env:
         pb.resetDebugVisualizerCamera(
             cameraDistance=0.6,
             cameraYaw=15,
-            cameraPitch=-20,
+            cameraPitch=-20,  
             # cameraTargetPosition=[-1.20, 0.69, -0.77],
             cameraTargetPosition=[0.5, 0, 0.08],
         )
