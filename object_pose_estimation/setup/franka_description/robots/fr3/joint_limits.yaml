@@ -1,8 +1,16 @@
+# Defining the limits for the first joint of the robotic arm
+
+
 joint1:
+
   limit:
+    # The lower limit of the joint's movement in radians
     lower:      -2.3093
+    # The upper limit of the joint's movement in radians
     upper:       2.3093
+    # The maximum velocity of the joint's movement in radians per second
     velocity:    2.0
+    # The maximum torque that can be applied to the joint in Newton-meters
     effort:     87.0
 
 joint2:

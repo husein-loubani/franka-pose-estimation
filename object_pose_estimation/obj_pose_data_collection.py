@@ -241,7 +241,7 @@ class Env:
         planeId = pb.loadURDF("plane.urdf")
 
         # Initilize robot
-        robotURDF = "setup/franka_description/robots/fr3/fr3.urdf"
+        robotURDF = "/home/hussein-lobs/franka-pose-estimation/object_pose_estimation/setup/franka_description/robots/fr3/fr3.urdf"
         self.robotID = pb.loadURDF(robotURDF, useFixedBase=True)
         self.rob = Robot(self.robotID)
 
@@ -253,7 +253,7 @@ class Env:
 
         # Add tactile sensors to robot
         sensorLinks = self.rob.get_id_by_name(
-            ["joint_finger_tip_left", "joint_finger_tip_right"]
+            ["joint_finger_tip_right", "joint_finger_tip_left"]
         )  # [21, 24]
         self.digits.add_camera(self.robotID, sensorLinks)
 

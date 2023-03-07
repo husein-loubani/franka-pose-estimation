@@ -19,7 +19,7 @@ class Robot:
             "fr3_joint5",
             "fr3_joint6",
             "fr3_joint7",
-            "fr3_hand_joint"
+            
 
         ]
         self.armJoints = self.get_id_by_name(self.armNames)
@@ -61,11 +61,13 @@ class Robot:
         """
         nbJoint = pb.getNumJoints(self.robotID)
         jointNames = {}
+      
         for i in range(nbJoint):
             name = pb.getJointInfo(self.robotID, i)[1].decode()
             jointNames[name] = i
-
         return [jointNames[name] for name in names]
+        
+
 
     def get_control_id_by_name(self, names):
         """
