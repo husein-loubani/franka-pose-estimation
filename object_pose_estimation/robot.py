@@ -34,7 +34,7 @@ class Robot:
         self.gripperControlID = self.get_control_id_by_name(self.gripperNames)
 
         # Get ID for end effector
-        self.eeName = ["right_hand"]
+        self.eeName = ["gripper"]
         self.eefID = self.get_id_by_name(self.eeName)[0]
 
         self.armHome = [
